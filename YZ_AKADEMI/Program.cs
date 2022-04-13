@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
+using System.Text.Encodings.Web;
 
 namespace YZ_AKADEMI
 {
@@ -12,57 +14,51 @@ namespace YZ_AKADEMI
             int[] BobPoint = new int[3];
             int BobSkor =0;
             int AliceSkor = 0;
-
+           
             //ALİCE PROBLEM
-            for (int i = 0; i < 3; i++)
+            for (int a = 0; a < 3; a++)
 
             {
                 Console.Write("Alice Puan giriniz = ");
 
-                AlicePoint[i] = Convert.ToInt32(Console.ReadLine());
+                AlicePoint[a] = Convert.ToInt32(Console.ReadLine());
             }
             //BOB PROBLEM
-            for (int i = 0; i < 3; i++)
+            for (int b = 0; b < 3; b++)
 
             {
                 Console.Write("Bob Puan giriniz = ");
 
-                BobPoint[i] = Convert.ToInt32(Console.ReadLine());
+                BobPoint[b] = Convert.ToInt32(Console.ReadLine());
             }
 
-            for (int i = 0; i < 3; i++)
+            for (int a = 0; a < 3;a++)
             {
-                Console.Write(AlicePoint[i] + " ");
+                Console.Write(AlicePoint[a] + " ");
 
             }
             Console.Write("\n");
-            for (int i = 0; i < 3; i++)
+            for (int b = 0; b < 3; b++)
             {
-                Console.Write(BobPoint[i] + " ");
+                Console.Write(BobPoint[b] + " ");
 
             }
-            Console.ReadKey();
-
             //Islem
             for (int i = 0; i < 3; i++)
             {
                 if (AlicePoint[i] < BobPoint[i])
+                {
                     AliceSkor++;
-                if (AlicePoint[i] > BobPoint[i])
+                }
+                else if (AlicePoint[i] > BobPoint[i])
+                {
                     BobSkor++;
-                if (AlicePoint[i] == BobPoint[i])
-                    AliceSkor = 0;
-                BobSkor = 0;
-
+                }
             }
-            Console.Write(AliceSkor + " ", BobSkor + " ");
-
-
-
+            Console.Write(" ");
+            Console.Write(AliceSkor + " ",  BobSkor + " ");
+            Console.ReadKey();
 
         }
-
-
-
     }
     }
