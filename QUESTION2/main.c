@@ -6,10 +6,14 @@
 char time[][21] = {"o' clock", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"};
 
 int main() {
-
+    printf("Okunusu istediginiz saati girerken 2 haneli olarak giriniz Orn:02:30 seklinde!");
+    printf("\n ");
     int minutes, hours;
     int half = 0;
-    scanf("%d %d", &hours, &minutes);
+    printf("Lutfen saati giriniz  : ");
+    scanf("%d", &hours);
+    printf("Lutfen dakikayi  giriniz  : ");
+    scanf("%d", &minutes);s
 
     if (minutes > 30) {
         minutes = 60-minutes;
