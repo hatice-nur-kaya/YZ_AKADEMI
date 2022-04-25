@@ -13,8 +13,11 @@ int main() {
     printf("Lutfen saati giriniz  : ");
     scanf("%d", &hours);
     printf("Lutfen dakikayi  giriniz  : ");
-    scanf("%d", &minutes);s
+    scanf("%d", &minutes);
 
+
+    printf("Girmis oldugunuz saatin okunusu : ");
+    printf("\n ");
     if (minutes > 30) {
         minutes = 60-minutes;
         half = 1;
