@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1657523344 source:c:\opencv\build\opencvdeneme\main.cpp
+	<iostream>
+	<opencv2\highgui\highgui.hpp>
+	<opencv2\opencv.hpp>
+
