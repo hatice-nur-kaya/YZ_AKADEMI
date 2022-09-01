@@ -9,11 +9,6 @@ using namespace std;
 using namespace cv;
 
 int main() {
-    //Mat markerImage1;
-    //Ptr<aruco::Dictionary> dictionary1 =getPredefinedDictionary(cv::aruco::DICT_6X6_250);
-    //drawMarker( dictionary1,27, 200, markerImage1, 1);
-    //imshow("marker",markerImage1);
-    //waitKey(0);
     Mat markerImage = cv::imread("apriltag.png");
     Mat imgCopy;
     cv::resize(markerImage, markerImage, Size(640, 480));
