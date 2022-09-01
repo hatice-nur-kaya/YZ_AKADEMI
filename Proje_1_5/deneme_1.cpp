@@ -34,7 +34,6 @@ int main() {
         cout<<"num "<<ids1.size()<<endl;
         cv::aruco::drawDetectedMarkers(imgCopy, corners1, ids1);
     }
-    //cv::namedWindow("a", cv::WINDOW_NORMAL);
     cv::imshow("a", imgCopy);
     cv::waitKey(0);
     return 0;
